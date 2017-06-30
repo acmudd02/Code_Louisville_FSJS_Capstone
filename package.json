@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acmudd02/Code_Louisville_CRUD.git"
+    "url": "git+https://github.com/acmudd02/Code_Louisville_FSJS_Capstone.git"
   },
   "author": "Adam Mudd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/acmudd02/Code_Louisville_CRUD/issues"
+    "url": "https://github.com/acmudd02/Code_Louisville_FSJS_Capstone/issues"
   },
-  "homepage": "https://github.com/acmudd02/Code_Louisville_CRUD#readme",
+  "homepage": "https://github.com/acmudd02/Code_Louisville_FSJS_Capstone#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "ejs": "^2.5.6",
