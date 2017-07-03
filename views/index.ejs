@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>MY APP</title>
+  <title>My Code Louisville FSJS Project</title>
 </head>
 <body>
-  <style> background-image: url(https://i.ytimg.com/vi/ViJJ4R1biJc/maxresdefault.jpg);</style>
   <div class="container text-center">
     <div class="jumbotron text-center">
       <h1>Star Wars: The Quote App!</h1>
     </div>
   <ul class="quotes list-group row">
   <% for(var i=0; i<quotes.length; i++) {%>
-    <li class="quote list-group-item col-xs-6 text-center">
+    <li class="quote list-group-item col-xs-6 text-center">  <!---  Using EJS to display the database information    ---> 
       <span><%= quotes[i].name %>: </span>
       <span><%= quotes[i].quote %></span>
     </li>

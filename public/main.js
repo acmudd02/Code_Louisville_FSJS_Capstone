@@ -1,6 +1,7 @@
 var update = document.getElementById('update')
 var del = document.getElementById('delete')
 
+//Replace last quote by Master Yoda with Lord Vader
 update.addEventListener('click', function () {
   fetch('quotes', {
     method: 'put',
@@ -18,6 +19,7 @@ update.addEventListener('click', function () {
   })
 })
 
+//Delete Last quote by Darth Vader
 del.addEventListener('click', function () {
   fetch('quotes', {
     method: 'delete',

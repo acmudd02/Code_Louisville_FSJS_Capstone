@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 
 var db
 
+//Connected to Mlab as opposed to a local monogo DB
 MongoClient.connect('mongodb://darth_plagueis_the_wise:!237mad6m9@ds141082.mlab.com:41082/star_wars_quotes', (err, database) => {
   if (err) return console.log(err)
   db = database
@@ -33,6 +34,7 @@ app.post('/quotes', (req, res) => {
   })
 })
 
+//One issue is that I can't see to get the brower to update after a put without crashing the server.
 app.put('/quotes', (req, res) => {
   db.collection('quotes')
   .findOneAndUpdate({name: 'Master Yoda'}, {
