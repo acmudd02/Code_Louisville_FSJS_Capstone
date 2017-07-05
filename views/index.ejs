@@ -13,7 +13,7 @@
     </div>
   <ul class="quotes list-group row">
   <% for(var i=0; i<quotes.length; i++) {%>
-    <li class="quote list-group-item col-xs-6 text-center">  <!---  Using EJS to display the database information    ---> 
+    <li class="quote list-group-item col-xs-6 text-left">  <!---  Using EJS to display the database information    --->
       <span><%= quotes[i].name %>: </span>
       <span><%= quotes[i].quote %></span>
     </li>
@@ -23,10 +23,10 @@
   <div>
     <h2>Add a quote</h2>
 
-    <form action="/quotes" method="POST">
+    <form>
       <input type="text" placeholder="name" name="name" id="name">
       <input type="text" placeholder="quote" name="quote" id="quote">
-      <button type="submit" id="submitbutton" disabled>Submit</button>
+      <button type="submit" id="submitbutton">Submit</button>
     </form>
   </div>
   <div>
