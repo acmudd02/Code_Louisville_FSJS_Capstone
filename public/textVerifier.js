@@ -4,13 +4,15 @@ console.log("All Systems Nominal");
 //Double check that something has been entered into the fields before allowing a submission
 $(document).ready(function(){
 
-$(('#quote')).mouseover(function() {
+$(('#submitbutton')).click(function() {
   if ($('#name').val().length === 0 || $('#quote').val().length === 0) {
-  $('#submitbutton').prop('disabled', true);
-  console.log("The Form is Empty");
+  alert("Please Add both a Character and a Quote.");
   }
   else{
-    $('#submitbutton').prop('disabled', false);
-    console.log("The Form is Full");
-  }
+    $.post("/quotes",
+    {
+      name: $("#name").val() ,
+      quote: $("#quote").val()
+    });
+  };
 })});
