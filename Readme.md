@@ -1,1 +1,3 @@
 This is my Code Louisville FS Java Script capstone project. This project is an application to create and store quotes from the Star Wars franchise. There is also a button to replace the last Yoda quote with a Darth Vader quote, and a feature to delete quotes by Darth Vader. Begin by going to the root directory of the project, and running npm install in order to install the neccessary packages. Next, run npm start to begin the start the server process. Lastly, open a localhost window to port 3000.
+
+PLease note that M-Lab will be undergoing maintenance on 07-21-2017 that could affect the perfromance of this application.  If there is an issue with the Database, please wait up to 10 minutes, and relaunch the application.  
