@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>My Code Louisville FSJS Project</title>
 </head>
@@ -11,7 +12,7 @@
     <div class="jumbotron text-center">
       <h1>Star Wars: The Quote App!</h1>
     </div>
-  <ul class="quotes list-group row">
+  <ul class="quotes list-group row" id="content">
   <% for(var i=0; i<quotes.length; i++) {%>
     <li class="quote list-group-item col-xs-6 text-left">  <!---  Using EJS to display the database information    --->
       <span><%= quotes[i].name %>: </span>
